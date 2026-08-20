@@ -18,14 +18,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Dar permissão ao gradlew
-        run: chmod +x gradlew
-
-      - name: Gerar wrapper do Gradle (caso não exista)
-        run: gradle wrapper --gradle-version 8.4 || true
+      - name: Configurar Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.4
 
       - name: Build APK debug
-        run: ./gradlew assembleDebug
+        run: gradle assembleDebug
 
       - name: Enviar APK como artefato
         uses: actions/upload-artifact@v4
