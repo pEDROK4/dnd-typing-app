@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DND ao Digitar</string>
+    <string name="accessibility_service_description">
+        Detecta quando você está digitando em campos de texto na parte superior
+        da tela e ativa o modo Não Perturbe automaticamente, desativando-o
+        assim que você parar de digitar.
+    </string>
+</resources>

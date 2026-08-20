@@ -1,0 +1,2 @@
+rootProject.name = "DndTyping"
+include ':app'
