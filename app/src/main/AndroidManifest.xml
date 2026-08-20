@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dndtyping">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Necessária para ler/alterar o modo Não Perturbe -->
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:label="DND ao Digitar"
         android:theme="@style/Theme.AppCompat.Light">
 
